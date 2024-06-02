@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <h1 style="text-align: center; margin-top: 50px">Get In Touch</h1>
+    <form>
+      <label>Name</label>
+      <input type="text" class="input" id="inputName" />
+      <label>Email</label>
+      <input type="email" class="input" id="inputEmail" />
+      <label>Phone Number</label>
+      <input type="number" class="input" id="inputNumber" />
+      <label>Subject</label>
+      <select name="" id="inputSubject" class="input">
+        <option>Front End Dev</option>
+        <option>Back End Dev</option>
+        <option>FullStack Dev</option>
+      </select>
+      <label>Your Message</label>
+      <textarea id="inputMessage"></textarea>
+      <div class="input-btn">
+        <button type="button" value="submit" class="button" onclick="handleInput()">Submit</button>
+      </div>
+    </form>
+    <script src="contact.js"></script>
+  </body>
+</html>
