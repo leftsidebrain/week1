@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Blog</title>
+    <!-- <link rel="stylesheet" href="../css/style.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/blog.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <img src="https://dumbways.id/assets/images/brandred.png" alt="" />
+        <a href="index.html" class="icon-link" style="font-weight: 900">Home</a>
+        <a href="" class="icon-link">My Project</a>
+      </div>
+      <div class="nav-btn">
+        <a href="contact.html"> <button class="btn-contact" style="font-weight: 900">Contact</button></a>
+      </div>
+    </nav>
+
+    <div class="blog">
+      <div class="blog-form">
+        <div class="form-container">
+          <form onsubmit="handleInput(event)">
+            <h1>Add My Project</h1>
+            <div class="non-box">
+              <div>
+                <label for="">Project Name</label>
+                <input type="text" id="inputName" />
+              </div>
+              <div class="date-input">
+                <div>
+                  <label for="">Start Date</label>
+                  <input type="date" id="inputStartDate" />
+                </div>
+                <div>
+                  <label for="">End Date</label>
+                  <input type="date" id="inputEndDate" />
+                </div>
+              </div>
+              <div>
+                <label for="">Description</label>
+                <textarea name="" id="inputDescription" cols="30" rows="10"></textarea>
+              </div>
+            </div>
+            <label for="">Tecnology</label>
+            <div class="box-container">
+              <div class="box">
+                <input type="checkbox" id="inputNodeJs" />
+                <label for="">Node Js</label>
+              </div>
+              <div class="box">
+                <input type="checkbox" id="inputReactJs" />
+                <label for="inputReactJs">React Js</label>
+              </div>
+            </div>
+            <div class="box-container">
+              <div class="box">
+                <input type="checkbox" id="inputNextJs" />
+                <label for="inputNextJs">Next Js</label>
+              </div>
+              <div class="box">
+                <input type="checkbox" id="inputTypescript" />
+                <label for="inputTypescript">Typescript</label>
+              </div>
+            </div>
+
+            <div class="non-box">
+              <div>
+                <label for="">Upload file</label>
+                <input type="file" id="inputFile" />
+              </div>
+            </div>
+            <div class="button-input">
+              <button>Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id="content" class="blog-list"></div>
+    </div>
+    <script src="js/blog.js"></script>
+  </body>
+</html>
