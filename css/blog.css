@@ -57,7 +57,7 @@ nav .navbar .icon-link:hover {
   /* background-color: blue; */
 }
 .blog-form .form-container {
-  width: 500px;
+  width: 40%;
   /* background-color: orangered; */
 }
 .blog-form .form-container h1 {
@@ -72,9 +72,9 @@ nav .navbar .icon-link:hover {
 textarea,
 select {
   width: 100%;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
-  padding: 8px;
+  padding: 3px;
   margin-top: 5px;
   margin-bottom: 5px;
   background-color: white;
@@ -84,8 +84,12 @@ select {
 }
 .blog-form .date-input {
   display: flex;
+  /* gap: 10px; */
+  /* background-color: blue; */
+  justify-content: space-between;
   gap: 10px;
 }
+
 .blog-form form textarea {
   height: 250px;
   resize: none;
@@ -218,4 +222,70 @@ select {
   /* background-color: red; */
   box-sizing: border-box;
   font-size: 20px;
+}
+/* blog detail */
+.blog-detail {
+  display: flex;
+  justify-content: center;
+}
+.blog-detail-container {
+  width: 80%;
+  margin: 50px 0;
+}
+.blog-detail-container img {
+  width: 100%;
+}
+
+.blog-detail-container h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 120%;
+  margin-bottom: 10px;
+}
+
+.blog-detail-container .author {
+  font-weight: 100;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.blog-detail-container p {
+  margin-top: 30px;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: justify;
+}
+
+.date-input .input-start {
+  width: 45%;
+}
+.date-input .input-end {
+  width: 45%;
+}
+
+@media only screen and (max-width: 710px) {
+  .date-input {
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    flex-wrap: wrap;
+  }
+  .box-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    height: 80px;
+    box-sizing: border-box;
+  }
+  .date-input .input-start {
+    width: 100%;
+  }
+  .date-input .input-end {
+    width: 100%;
+  }
+  .blog-form .form-container {
+    width: 300px;
+    /* background-color: orangered; */
+  }
 }

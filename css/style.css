@@ -7,7 +7,7 @@ body {
 }
 .container {
   width: 70%;
-  height: 400px;
+  height: 80%px;
   margin: 50px auto;
   background-color: rgb(235, 232, 232);
   border-radius: 10px;
@@ -16,13 +16,17 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  background-color: red;
 }
 main {
-  width: 45%;
+  flex: 2;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
+  /* background-color: blue; */
+  padding: 5px;
+  width: 80%;
 }
 p {
   text-align: justify;
@@ -36,12 +40,14 @@ p {
   border-radius: 15px;
 }
 .icon {
-  font-size: 30px;
   display: flex;
   justify-content: start;
+  width: 100%;
+  /* background-color: red; */
 }
 .icon i {
   margin-right: 20px;
+  font-size: 25px;
 }
 .cv {
   margin-top: 20px;
@@ -51,12 +57,13 @@ p {
   color: black;
 }
 .gambar {
-  width: 100%;
+  width: 80%;
   background-color: white;
   border-radius: 10px;
   box-shadow: 5px 5px 10px;
   text-align: center;
   margin: 0px auto;
+  /* background-color: blue; */
 }
 .gambar img {
   width: 100%;
@@ -72,21 +79,21 @@ table {
   margin-left: 10px;
 }
 aside {
-  width: 30%;
-  padding: 20px;
+  flex: 1;
 }
 nav {
   background-color: rgb(236, 235, 234);
   width: 100%;
-  height: 50px;
+  height: 60px;
   display: flex;
 }
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  width: 500px;
-  height: 50px;
+  justify-content: space-around;
+  flex: 1;
+  width: 100%;
+  /* background-color: red; */
 }
 .navbar img {
   width: 50px;
@@ -103,8 +110,8 @@ nav {
   display: flex;
   align-items: center;
   justify-content: end;
-  width: 100%;
-  margin-right: 40px;
+  flex: 2;
+  /* background-color: blue; */
 }
 .btn-contact {
   background-color: navy;
@@ -112,12 +119,14 @@ nav {
   width: 100px;
   border-radius: 7px;
   color: white;
+  margin-right: 40px;
 }
-form {
-  width: 50%;
+.contact-form {
+  width: 40%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  background-color: blue;
 }
 .input {
   height: 40px;
@@ -149,3 +158,65 @@ textarea {
   margin-top: 12px;
   border-radius: 10px;
 }
+/* responsive blog-detail */
+
+#humberger-button {
+  display: none;
+  font-size: 25px;
+  margin-right: 40px;
+}
+.humberger-nav-container {
+  display: none;
+}
+.humberger-nav-container a {
+  color: black;
+  border: 2px solid white;
+  background-color: rgb(217, 217, 217);
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.humberger-nav-container .active {
+  background-color: orangered;
+}
+@media only screen and (max-width: 519px) {
+  #humberger-button {
+    display: block;
+  }
+
+  .nav-collapse {
+    display: none;
+  }
+
+  .humberger-nav-container {
+    font-size: 23px;
+    display: none;
+    flex-direction: column;
+  }
+}
+/* end detail blog responsive */
+
+/* index responsive */
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  aside {
+    width: 70%;
+  }
+  .icon {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 800px) and (min-width: 520px) {
+  .navbar {
+    flex: 3;
+  }
+
+  .nav-btn {
+    flex: 1;
+  }
+}
+/* end index responsive */

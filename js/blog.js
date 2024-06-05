@@ -22,6 +22,8 @@ function handleInput(event) {
   let inputNextJs = document.getElementById("inputNextJs");
   let inputTypesricpt = document.getElementById("inputTypescript");
   let inputFile = document.getElementById("inputFile").files;
+  let inputStartDate = document.getElementById("inputStartDate").value;
+  let inputEndDate = document.getElementById("inputEndDate").value;
 
   event.preventDefault();
 

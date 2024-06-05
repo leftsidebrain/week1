@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Blog</title>
-    <!-- <link rel="stylesheet" href="../css/style.css" /> -->
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="css/blog.css" />
   </head>
@@ -13,13 +13,20 @@
     <nav>
       <div class="navbar">
         <img src="https://dumbways.id/assets/images/brandred.png" alt="" />
-        <a href="index.html" class="icon-link" style="font-weight: 900">Home</a>
-        <a href="" class="icon-link">My Project</a>
+        <a href="index.html" class="icon-link nav-collapse" style="font-weight: 900">Home</a>
+        <a href="blog.html" class="icon-link nav-collapse">My Project</a>
+        <a href="blog-detail.html" class="icon-link nav-collapse">Blog Detail</a>
       </div>
       <div class="nav-btn">
-        <a href="contact.html"> <button class="btn-contact" style="font-weight: 900">Contact</button></a>
+        <a href="contact.html"> <button class="btn-contact nav-collapse" style="font-weight: 900">Contact</button></a>
+        <i class="fa-solid fa-bars" style="cursor: pointer" id="humberger-button" onclick="handleButton()"></i>
       </div>
     </nav>
+    <div class="humberger-nav-container" id="humberger-nav-container">
+      <a href="index.html" class="active">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact Me</a>
+    </div>
 
     <div class="blog">
       <div class="blog-form">
@@ -32,11 +39,11 @@
                 <input type="text" id="inputName" />
               </div>
               <div class="date-input">
-                <div>
+                <div class="input-start">
                   <label for="">Start Date</label>
                   <input type="date" id="inputStartDate" />
                 </div>
-                <div>
+                <div class="input-end">
                   <label for="">End Date</label>
                   <input type="date" id="inputEndDate" />
                 </div>
@@ -83,5 +90,6 @@
       <div id="content" class="blog-list"></div>
     </div>
     <script src="js/blog.js"></script>
+    <script src="js/nav.js"></script>
   </body>
 </html>
