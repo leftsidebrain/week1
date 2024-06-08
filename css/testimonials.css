@@ -1,25 +1,33 @@
-.container-testimonials {
+.container-raing-testimonials {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   /* background-color: red; */
-  margin: 50px 50px;
-  text-align: center;
 }
 .testimonials {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  gap: 5px;
 }
 .testimonial {
-  width: 30%;
+  width: 25%;
   box-shadow: 0px 0px 10px black;
   padding: 20px;
   box-sizing: border-box;
   border-radius: 5px;
   margin-bottom: 35px;
+  background-color: white;
 }
 .testimonial img {
-  width: 100%;
+  height: 200px;
   border-radius: 5px;
   object-fit: cover;
+}
+
+.profile-img {
+  width: 100%;
 }
 
 .testimonial .author {
@@ -32,4 +40,44 @@
   font-style: italic;
   line-height: 1.5;
   margin-bottom: 20px;
+}
+
+.container-rating {
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin: 30px 0px;
+}
+.rating {
+  /* background-color: blueviolet; */
+  margin: 30px 0px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.rating button {
+  width: 50px;
+  border-radius: 3px;
+  border: none;
+  height: 20px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+@media only screen and (max-width: 900px) {
+  .testimonial {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .testimonial {
+    width: 80%;
+  }
+  .testimonial img {
+    width: 100%;
+  }
 }

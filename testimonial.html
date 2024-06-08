@@ -3,9 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=q, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/testimonials.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Testimonial</title>
   </head>
   <body>
@@ -26,30 +33,27 @@
       <a href="blog.html">Blog</a>
       <a href="contact.html">Contact Me</a>
     </div>
-    <div class="container-testimonials">
+    <div class="container-raing-testimonials">
       <h1>My Testimonials</h1>
+      <div class="container-rating">
+        <h2>Rating By Stars</h2>
+        <div class="rating">
+          <button class="rating-btn" onclick="allTestimonial()">ALL</button>
+          <button class="rating-btn" onclick="filterTestimonials(1)">1 <i class="fa-solid fa-star"></i></button>
+          <button class="rating-btn" onclick="filterTestimonials(2)">2 <i class="fa-solid fa-star"></i></button>
+          <button class="rating-btn" onclick="filterTestimonials(3)">3 <i class="fa-solid fa-star"></i></button>
+          <button class="rating-btn" onclick="filterTestimonials(4)">4 <i class="fa-solid fa-star"></i></button>
+          <button class="rating-btn" onclick="filterTestimonials(5)">5 <i class="fa-solid fa-star"></i></button>
+        </div>
+      </div>
     </div>
     <div class="testimonials">
       <div class="testimonial">
-        <img src="https://www.greenscene.co.id/wp-content/uploads/2022/07/Gojo-768x549.jpg" alt="" />
-        <p class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, qui?</p>
-        <p class="author">Gojo Satoru</p>
-      </div>
-      <div class="testimonial">
-        <img src="https://www.greenscene.co.id/wp-content/uploads/2022/07/Gojo-768x549.jpg" alt="" />
-        <p class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, qui?</p>
-        <p class="author">Gojo Satoru</p>
-      </div>
-      <div class="testimonial">
-        <img src="https://www.greenscene.co.id/wp-content/uploads/2022/07/Gojo-768x549.jpg" alt="" />
-        <p class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, qui?</p>
-        <p class="author">Gojo Satoru</p>
-      </div>
-      <div class="testimonial">
-        <img src="https://www.greenscene.co.id/wp-content/uploads/2022/07/Gojo-768x549.jpg" alt="" />
-        <p class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, qui?</p>
+        <img src="https://www.greenscene.co.id/wp-content/uploads/2022/07/Gojo-768x549.jpg" alt="" class="profile-img" />
+        <p class="caption">Daijoubu desu datte kimi yowai mo</p>
         <p class="author">Gojo Satoru</p>
       </div>
     </div>
+    <script src="js/testimonials.js"></script>
   </body>
 </html>
