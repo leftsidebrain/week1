@@ -38,9 +38,7 @@ async function filterTestimonials(rating) {
   try {
     const response = await testimonial;
     let testimonialHtml = ``;
-    const dataFilter = response.filter((item) => {
-      item.rating === rating;
-    });
+    const dataFilter = response.filter((item) => item.rating === rating);
     if (dataFilter.length === 0) {
       testimonialHtml += `<h1> Data did not found!</h1>`;
     } else {
